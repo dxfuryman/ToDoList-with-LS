@@ -1,5 +1,5 @@
-import {useState} from "react";
-import {useTodo} from "../context/index.js";
+import React, { useState } from 'react'
+import { useTodo } from '../context/index.js';
 
 export const TodoForm = () => {
     const [todo, setTodo] = useState("")
