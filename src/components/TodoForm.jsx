@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {useTodo} from "../context/index.js";
 
 export const TodoForm = () => {
     const [todo, setTodo] = useState("")
@@ -11,7 +12,6 @@ export const TodoForm = () => {
         addTodo({todo, completed: false})
         setTodo("")
 
-        }
     }
 
     return (
